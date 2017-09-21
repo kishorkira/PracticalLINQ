@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Basics
 {
@@ -9,15 +10,20 @@ namespace Basics
 
             Customer foundCustomer = null;
 
-            foreach(var customer in customerList)
-            {
-                if(customer.CustomerId == customerId)
-                {
-                    foundCustomer = customer;
-                    break;
-                }
-            }
+            //foreach(var customer in customerList)
+            //{
+            //    if(customer.CustomerId == customerId)
+            //    {
+            //        foundCustomer = customer;
+            //        break;
+            //    }
+            //}
 
+            var customers = from c in customerList
+                            where c.CustomerId == customerId
+                            select c;
+
+            foundCustomer = customers.First();
             return foundCustomer;
         }
         public List<Customer> Retrieve()
