@@ -3,7 +3,7 @@
 namespace Basics.Test
 {
     [TestClass]
-    class CustomerRepositoryTest
+    public class CustomerRepositoryTest
     {
         public TestContext TestContext { get; set; }
         [TestMethod]
@@ -18,7 +18,10 @@ namespace Basics.Test
 
             //Assert
             Assert.IsNotNull(customer);
-            Assert.AreEqual(2, customer.CustomerId);
+            Assert.AreEqual(1, customer.CustomerId);
+            Assert.AreEqual("Kishor", customer.FirstName);
+            Assert.AreEqual("Kira", customer.LastName);
+
 
         }
     }
