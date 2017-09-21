@@ -2,7 +2,7 @@
 
 namespace Basics
 {
-    class CustomerRepository
+    public class CustomerRepository
     {
         public Customer FindCustomer(List<Customer> customerList,int customerId)
         {

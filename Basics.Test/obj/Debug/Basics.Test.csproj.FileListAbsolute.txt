@@ -1,0 +1,16 @@
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Basics.Test.dll
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Basics.Test.pdb
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Basics.exe
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Basics.pdb
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Basics.exe.config
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\obj\Debug\Basics.Test.csprojResolveAssemblyReference.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\obj\Debug\Basics.Test.csproj.CoreCompileInputs.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\obj\Debug\Basics.Test.dll
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Test\obj\Debug\Basics.Test.pdb

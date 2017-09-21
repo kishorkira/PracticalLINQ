@@ -1,9 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Basics.Test
 {
@@ -14,6 +9,16 @@ namespace Basics.Test
         [TestMethod]
         public void FindExistingCustomerTest()
         {
+            //Arrange 
+            var repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
+
+            //Act 
+            var customer = repository.FindCustomer(customerList, 1);
+
+            //Assert
+            Assert.IsNotNull(customer);
+            Assert.AreEqual(2, customer.CustomerId);
 
         }
     }
