@@ -19,11 +19,15 @@ namespace Basics
             //    }
             //}
 
-            var customers = from c in customerList
-                            where c.CustomerId == customerId
-                            select c;
+            //var customers = from c in customerList
+            //                where c.CustomerId == customerId
+            //                select c;
 
-            foundCustomer = customers.First();
+            //foundCustomer = customers.First();
+
+            foundCustomer = customerList
+                            .FirstOrDefault(c=> c.CustomerId == customerId);
+
             return foundCustomer;
         }
         public List<Customer> Retrieve()
