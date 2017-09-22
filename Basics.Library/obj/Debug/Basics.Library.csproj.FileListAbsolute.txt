@@ -1,0 +1,6 @@
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Library\bin\Debug\Basics.Library.dll
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Library\bin\Debug\Basics.Library.pdb
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Library\obj\Debug\Basics.Library.csprojResolveAssemblyReference.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Library\obj\Debug\Basics.Library.csproj.CoreCompileInputs.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Library\obj\Debug\Basics.Library.dll
+C:\Users\kisho\Google Drive\.Net\C#\C#\PracticalLINQ\Basics.Library\obj\Debug\Basics.Library.pdb
