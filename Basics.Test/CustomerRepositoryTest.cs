@@ -44,6 +44,25 @@ namespace Basics.Test
 
 
         }
+        [TestMethod]
+        public void SortByNameReverse()
+        {
+            //Arrange 
+            var repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
+
+            //Act 
+            var customers = repository.SortByNameReverse(customerList);
+            var customer = customers.First();
+
+            //Assert
+            Assert.IsNotNull(customer);
+            Assert.AreEqual(2, customer.CustomerId);
+            Assert.AreEqual("Aditya", customer.FirstName);
+            Assert.AreEqual("Vardhan", customer.LastName);
+
+
+        }
     }
 }
     

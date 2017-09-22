@@ -36,7 +36,11 @@ namespace Basics
             return customerList.OrderBy(c => c.LastName)
                                 .ThenBy(c => c.FirstName);
         }
-
+        public IEnumerable<Customer> SortByNameReverse(List<Customer> customerList)
+        {
+            return customerList.OrderByDescending(c => c.LastName)
+                                .ThenByDescending(c => c.FirstName);
+        }
 
         public List<Customer> Retrieve()
         {
@@ -55,7 +59,7 @@ namespace Basics
                {
                    CustomerId =2,
                    FirstName="Aditya",
-                   LastName="VardhAN",
+                   LastName="Vardhan",
                    CustomerTypeId=2,
                    EmailAddress="av@mail.com"
                },
@@ -71,7 +75,7 @@ namespace Basics
                {
                    CustomerId =4,
                    FirstName="Srinath",
-                   LastName="Reddy",
+                   LastName="T",
                    CustomerTypeId=3,
                    EmailAddress="sr@mail.com"
                }
