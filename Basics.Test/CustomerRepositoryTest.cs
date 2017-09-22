@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
 
 namespace Basics.Test
 {
@@ -21,6 +22,25 @@ namespace Basics.Test
             Assert.AreEqual(1, customer.CustomerId);
             Assert.AreEqual("Kishor", customer.FirstName);
             Assert.AreEqual("Kira", customer.LastName);
+
+
+        }
+        [TestMethod]
+        public void SortByName()
+        {
+            //Arrange 
+            var repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
+
+            //Act 
+            var customers = repository.SortByName(customerList);
+            var customer = customers.First();
+
+            //Assert
+            Assert.IsNotNull(customer);
+            Assert.AreEqual(3, customer.CustomerId);
+            Assert.AreEqual("Ram", customer.FirstName);
+            Assert.AreEqual("DVS", customer.LastName);
 
 
         }

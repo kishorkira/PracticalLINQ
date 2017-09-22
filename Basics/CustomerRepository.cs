@@ -30,6 +30,14 @@ namespace Basics
 
             return foundCustomer;
         }
+
+        public IEnumerable<Customer> SortByName(List<Customer> customerList)
+        {
+            return customerList.OrderBy(c => c.LastName)
+                                .ThenBy(c => c.FirstName);
+        }
+
+
         public List<Customer> Retrieve()
         {
 
