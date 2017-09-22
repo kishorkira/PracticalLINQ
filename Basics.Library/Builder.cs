@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Basics.Library
@@ -13,8 +14,9 @@ namespace Basics.Library
         }
         public IEnumerable<string> GenerateStringSequence()
         {
+            Random rand = new Random();
             var strings = Enumerable.Range(0, 10)
-                                .Select(i =>((char)('A' + i)).ToString());
+                                .Select(i =>((char)('A' + rand.Next(0,26))).ToString());
             return strings;
         }
     }
