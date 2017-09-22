@@ -63,6 +63,24 @@ namespace Basics.Test
 
 
         }
+        [TestMethod]
+        public void SortByTypeId()
+        {
+            //Arrange 
+            var repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
+
+            //Act 
+            var customers = repository.SortByTypeId(customerList);
+           
+
+            //Assert
+            Assert.IsNotNull(customers);
+            Assert.AreEqual(null, customers.Last().CustomerTypeId);
+          
+
+
+        }
     }
 }
     

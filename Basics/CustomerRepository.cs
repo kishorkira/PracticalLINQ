@@ -42,7 +42,12 @@ namespace Basics
             //                    .ThenByDescending(c => c.FirstName);
             return SortByName(customerList).Reverse();
         }
+        public IEnumerable<Customer> SortByTypeId(List<Customer> customerList)
+        {
+            return customerList.OrderByDescending(c => c.CustomerTypeId.HasValue)
+                                .ThenBy(c => c.CustomerTypeId);
 
+        }
         public List<Customer> Retrieve()
         {
 
@@ -69,7 +74,7 @@ namespace Basics
                    CustomerId =3,
                    FirstName="Ram",
                    LastName="DVS",
-                   CustomerTypeId=1,
+                   CustomerTypeId=null,
                    EmailAddress="dvsr@mail.com"
                },
                new Customer()
