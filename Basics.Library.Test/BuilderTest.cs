@@ -7,13 +7,13 @@ namespace Basics.Library.Test
     {
         public TestContext TestContext { get; set; }
         [TestMethod]
-       public void GenerateSequence()
+        public void GenerateIntSequence()
         {
             //Arrange
             var builder = new Builder();
 
             //Act
-            var ints = builder.GenerateSequence();
+            var ints = builder.GenerateIntSequence();
 
             //Analyze
             foreach (var i in ints)
@@ -22,6 +22,23 @@ namespace Basics.Library.Test
             }
             //Assert
             Assert.IsNotNull(ints);
+        }
+        [TestMethod]
+        public void GenerateStringSequence()
+        {
+            //Arrange
+            var builder = new Builder();
+
+            //Act
+            var result = builder.GenerateStringSequence();
+
+            //Analyze
+            foreach (var item in result)
+            {
+                TestContext.WriteLine(item);
+            }
+            //Assert
+            Assert.IsNotNull(result);
         }
     }
 }
