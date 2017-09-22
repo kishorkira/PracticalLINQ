@@ -38,8 +38,9 @@ namespace Basics
         }
         public IEnumerable<Customer> SortByNameReverse(List<Customer> customerList)
         {
-            return customerList.OrderByDescending(c => c.LastName)
-                                .ThenByDescending(c => c.FirstName);
+            //return customerList.OrderByDescending(c => c.LastName)
+            //                    .ThenByDescending(c => c.FirstName);
+            return SortByName(customerList).Reverse();
         }
 
         public List<Customer> Retrieve()
