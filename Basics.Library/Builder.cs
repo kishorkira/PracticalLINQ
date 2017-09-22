@@ -7,7 +7,8 @@ namespace Basics.Library
     {
         public IEnumerable<int> GenerateSequence()
         {
-            var ints = Enumerable.Range(1, 10);
+            var ints = Enumerable.Range(1, 10)
+                                .Select(i => i*6);
             return ints;
         }
     }
