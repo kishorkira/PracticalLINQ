@@ -54,6 +54,20 @@ namespace Basics
             var query = customerList.Select(c => $"{c.FirstName}, {c.LastName}");
             return query;
         }
+        
+        public dynamic GetCustomCustomer(List<Customer> customerList)
+        {
+            var query = customerList.Select(c => new
+                                {
+                                    Name = $"{c.FirstName}, {c.LastName}",
+                                    c.EmailAddress
+                                });
+            foreach(var item in query)
+            {
+                System.Console.WriteLine($"{item.Name} : {item.EmailAddress}");
+            }
+            return query;
+        }
         public List<Customer> Retrieve()
         {
 
