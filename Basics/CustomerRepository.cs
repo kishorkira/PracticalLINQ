@@ -48,6 +48,12 @@ namespace Basics
                                 .ThenBy(c => c.CustomerTypeId);
 
         }
+
+        public IEnumerable<string> GetNames(List<Customer> customerList)
+        {
+            var query = customerList.Select(c => $"{c.FirstName}, {c.LastName}");
+            return query;
+        }
         public List<Customer> Retrieve()
         {
 

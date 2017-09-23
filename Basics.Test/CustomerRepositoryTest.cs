@@ -81,6 +81,20 @@ namespace Basics.Test
 
 
         }
+        [TestMethod]
+        public void GetNames()
+        {
+            //Arrange 
+            var repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
+            
+            //Act 
+            var customers = repository.GetNames(customerList);
+           
+            //Assert
+            Assert.IsNotNull(customers);
+            Assert.AreEqual("Kishor, Kira", customers.First());
+        }
     }
 }
     
