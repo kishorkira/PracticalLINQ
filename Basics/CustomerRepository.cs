@@ -6,6 +6,7 @@ namespace Basics
 {
     public class CustomerRepository
     {
+        InvoiceRepository repository = new InvoiceRepository();
         public Customer FindCustomer(List<Customer> customerList,int customerId)
         {
 
@@ -98,7 +99,9 @@ namespace Basics
                    FirstName="Kishor",
                    LastName="Kira",
                    CustomerTypeId=1,
-                   EmailAddress="kk@mail.com"
+                   EmailAddress="kk@mail.com",
+                   InvoiceList = repository.Retrieve(1)
+                   
                },
                new Customer()
                {
@@ -106,7 +109,8 @@ namespace Basics
                    FirstName="Aditya",
                    LastName="Vardhan",
                    CustomerTypeId=2,
-                   EmailAddress="av@mail.com"
+                   EmailAddress="av@mail.com",
+                   InvoiceList = repository.Retrieve(2)
                },
                new Customer()
                {
@@ -114,7 +118,8 @@ namespace Basics
                    FirstName="Ram",
                    LastName="DVS",
                    CustomerTypeId=null,
-                   EmailAddress="dvsr@mail.com"
+                   EmailAddress="dvsr@mail.com",
+                   InvoiceList = repository.Retrieve(3)
                },
                new Customer()
                {
@@ -122,7 +127,8 @@ namespace Basics
                    FirstName="Srinath",
                    LastName="T",
                    CustomerTypeId=3,
-                   EmailAddress="sr@mail.com"
+                   EmailAddress="sr@mail.com",
+                   InvoiceList = repository.Retrieve(4)
                }
 
             };

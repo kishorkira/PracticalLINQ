@@ -1,4 +1,6 @@
-﻿namespace Basics
+﻿using System.Collections.Generic;
+
+namespace Basics
 {
     public class Customer
     {
@@ -7,6 +9,7 @@
         public string LastName { get; set;}
         public int? CustomerTypeId { get; set; }
         public string EmailAddress { get; set; }
+        public List<Invoice> InvoiceList { get; set; }
 
     }
 }
