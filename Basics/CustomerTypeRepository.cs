@@ -2,9 +2,9 @@
 
 namespace Basics
 {
-    class CustomerTypeRepository
+    public class CustomerTypeRepository
     {
-        public List<CustomerType> Retrive()
+        public List<CustomerType> Retrieve()
         {
             List<CustomerType> customerTypesList = new List<CustomerType>
             {

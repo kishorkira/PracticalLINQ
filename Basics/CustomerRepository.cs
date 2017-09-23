@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Basics
@@ -64,7 +65,25 @@ namespace Basics
                                 });
             foreach(var item in query)
             {
-                System.Console.WriteLine($"{item.Name} : {item.EmailAddress}");
+                Console.WriteLine($"{item.Name} : {item.EmailAddress}");
+            }
+            return query;
+        }
+
+        public dynamic GetNamesAndType(List<Customer> customerList,
+                                        List<CustomerType> customerTypeList)
+        {
+            var query = customerList.Join(customerTypeList,
+                                        c => c.CustomerTypeId,
+                                        ct => ct.CustomerTypeId,
+                                        (c, ct) => new
+                                        {
+                                            Name = $"{c.FirstName}, {c.LastName}",
+                                            CustomerTypeName = ct.TypeName
+                                        });
+            foreach (var item in query)
+            {
+                Console.WriteLine($"{item.Name} : {item.CustomerTypeName}");
             }
             return query;
         }

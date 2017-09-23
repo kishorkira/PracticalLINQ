@@ -95,6 +95,22 @@ namespace Basics.Test
             Assert.IsNotNull(customers);
             Assert.AreEqual("Kishor, Kira", customers.First());
         }
+        [TestMethod]
+        public void GetNamesAndType()
+        {
+            //Arrange 
+            var repository = new CustomerRepository();
+            var typeRepository = new CustomerTypeRepository();
+            var customerList = repository.Retrieve();
+            var customerTypeList = typeRepository.Retrieve();
+
+
+            //Act 
+            var customers = repository.GetNamesAndType(customerList,customerTypeList);
+
+            //Assert
+            
+        }
     }
 }
     
