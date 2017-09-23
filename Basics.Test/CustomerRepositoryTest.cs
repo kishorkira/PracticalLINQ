@@ -111,6 +111,25 @@ namespace Basics.Test
             //Assert
             
         }
+        [TestMethod]
+        public void GetGetOverdueCustomers()
+        {
+            //Arrange 
+            var repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
+
+            //Act 
+            var customers = repository.GetOverdueCustomers(customerList);
+
+            //Analize
+            foreach(var customer in customers)
+            {
+                System.Console.WriteLine(customer.FirstName);
+            }
+            //Assert
+            Assert.IsNotNull(customers);
+           
+        }
     }
 }
     

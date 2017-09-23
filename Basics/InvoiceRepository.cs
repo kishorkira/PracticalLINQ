@@ -26,6 +26,7 @@ namespace Basics
                     DueDate =new DateTime(2017,10,5),
                     IsPaid =null
                 },
+                 
                   new Invoice
                 {
                     InvoiceId =3,
@@ -33,6 +34,13 @@ namespace Basics
                     InvoiceDate =new DateTime(2017,9,23),
                     DueDate =new DateTime(2017,10,5),
                     IsPaid =null
+                }, new Invoice
+                {
+                    InvoiceId =4,
+                    CustomerId =1,
+                    InvoiceDate =new DateTime(2017,9,23),
+                    DueDate =new DateTime(2017,10,5),
+                    IsPaid =true
                 }
             };
             List<Invoice> filteredList= invoiceList.Where(i => i.CustomerId == CustomerId).ToList();
